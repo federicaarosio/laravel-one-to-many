@@ -19,4 +19,8 @@ class Project extends Model
         'languages',
         'creation_date',
     ];
+
+    public function type(){
+        $this->belongsTo(Type::class);
+    }
 }
