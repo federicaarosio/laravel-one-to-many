@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
+use App\Http\Controllers\Admin\TypeController as TypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +36,6 @@ Route::middleware('auth')
         Route::patch('/projects/deleted/{poject}', [AdminProjectController::class, 'deletedRestore'])->name('projects.deleted.restore');
         Route::delete('/projects/deleted/{project}', [AdminProjectController::class, 'deletedDestroy'])->name('projects.deleted.destroy');
         Route::resource('/projects', AdminProjectController::class);
+        
+        Route::resource('/types', TypeController::class);
 });

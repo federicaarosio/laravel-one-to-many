@@ -12,15 +12,19 @@
 
             <img src="{{ $project -> cover_image }}" alt="project image">
 
-            <div>a project by {{ $project -> author }}</div>
-            <div>creation date: {{ $project -> creation_date  }}</div>
+            <div>
+                <strong>a project by: </strong>{{ $project -> author }}
+            </div>
+            <div>
+                <strong>creation date: </strong>{{ $project -> creation_date  }}
+            </div>
 
             <div>
                 <p>
-                    {{ $project->description }}
+                    <strong>description: </strong>{{ $project->description }}
                 </p>
                 <p>
-                    <strong>Type: </strong>{{ $project->type -> name}}
+                    <strong>Type: </strong>{{ $project-> type -> name}}
                 </p>
             </div>
 

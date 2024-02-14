@@ -18,6 +18,16 @@
                         <label for="title" class="input-group-text">Title:</label>
                         <input class="form-control" type="text" name="title" id="title" value="{{ old('title', $project->title) }}">
                     </div>
+{{-- 
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="type">Type</label>
+                        <select class="form-select" id="type" name="type" value="{{ old('type', $project->type) }}"">
+                          <option selected>Choose...</option>
+                          <option value="1">Front-end</option>
+                          <option value="2">Back-end</option>
+                          <option value="3">Full-stack</option>
+                        </select>
+                    </div> --}}
     
                     <div class="mb-3 input-group">
                         <label for="author" class="input-group-text">Author:</label>
