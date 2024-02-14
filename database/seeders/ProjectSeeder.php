@@ -16,12 +16,12 @@ class ProjectSeeder extends Seeder
     {
         $projects = [
             'project' => [
-                    'title' => 'Boolzapp',
+                    'title' => 'Progetto 1',
                     'author' => 'Federica Arosio',
                     'cover_image' => 'https://picsum.photos/id/104/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
                     'languages' => 'html, css, js',
-                    'creation_date' => '2023-12-12'
+                    'creation_date' => '2023-10-12'
                 ],
                 [
                     'title' => 'Progetto 2',
@@ -29,14 +29,14 @@ class ProjectSeeder extends Seeder
                     'cover_image' => 'https://picsum.photos/id/102/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
                     'languages' => 'html, css, js',
-                    'creation_date' => '2023-12-12'
+                    'creation_date' => '2023-11-06'
                 ],
                 [
                     'title' => 'Progetto 3',
                     'author' => 'Federica Arosio',
                     'cover_image' => 'https://picsum.photos/id/101/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
-                    'languages' => 'html, css, js',
+                    'languages' => 'html, css, js, vue',
                     'creation_date' => '2023-12-12'
                 ],
                 [
@@ -44,8 +44,8 @@ class ProjectSeeder extends Seeder
                     'author' => 'Federica Arosio',
                     'cover_image' => 'https://picsum.photos/id/106/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
-                    'languages' => 'html, css, js',
-                    'creation_date' => '2023-12-12'
+                    'languages' => 'html, css, js, php',
+                    'creation_date' => '2022-01-12'
                 ],
         ];
     
