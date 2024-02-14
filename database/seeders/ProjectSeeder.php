@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Project;
+use App\Models\Type;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
@@ -48,10 +49,14 @@ class ProjectSeeder extends Seeder
                     'creation_date' => '2022-01-12'
                 ],
         ];
+
+        //prendo tutti gli id di tutti i tipi e li salvo in $typesIds
+        $typesIds = Type::all()->pluck('id');
     
         foreach ($projects as $singleProject) {
             $newProject = new Project();
             $newProject->title = $singleProject['title'];
+            $newProject->type_id = $typesIds[rand(0, count($typesIds) - 1 )];
             $newProject->author = $singleProject['author'];
             $newProject->description = $singleProject['description'];
             $newProject->cover_image = $singleProject['cover_image'];
