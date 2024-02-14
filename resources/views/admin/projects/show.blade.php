@@ -19,6 +19,9 @@
                 <p>
                     {{ $project->description }}
                 </p>
+                <p>
+                    <strong>Type: </strong>{{ $project->type -> name}}
+                </p>
             </div>
 
         </div>
