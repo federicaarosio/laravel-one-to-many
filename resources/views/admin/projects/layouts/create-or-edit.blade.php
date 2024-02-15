@@ -23,7 +23,7 @@
                         <label class="input-group-text" for="type_id">Select the type</label>
                         <select  class="form-control" id="type_id" name="type_id" >
                             @foreach ($types as $type)
-                                <option value="{{ $type->id }}" @selected(old('type_id') == $type->id)>
+                                <option value=" {{ $type->id}}" {{ $type->id == old('type_id', $project->type_id) ? 'selected' : ''}}>
                                     {{ $type->name }}
                                 </option>
                             @endforeach

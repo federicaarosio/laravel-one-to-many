@@ -37,6 +37,7 @@ class ProjectController extends Controller
         $request->validate(
             [
                 'title' => ['required'],
+                'type_id'=>['exists:types,id'],
                 'description' => ['required'],
                 'cover_image' => ['required', 'url:http,https'],
                 'author' => ['required'],
@@ -73,6 +74,7 @@ class ProjectController extends Controller
         $request->validate(
             [
                 'title' => ['required'],
+                'type_id'=>['exists:types,id'],
                 'description' => ['required'],
                 'cover_image' => ['required', 'url:http,https'],
                 'author' => ['required'],
