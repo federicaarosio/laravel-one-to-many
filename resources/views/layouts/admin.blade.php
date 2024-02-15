@@ -54,31 +54,40 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin.projects.index') }}">
+
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     Projects
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin.projects.create') }}">
-                                    Add a new Project
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin.projects.deleted.index') }}">
-                                    Deleted Projects 
-                                </a>
+
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="nav-link" href="{{ route('admin.projects.index') }}">
+                                        All projects
+                                    </a>
+                                    <a class="nav-link" href="{{ route('admin.projects.create') }}">
+                                        Add a new Project
+                                    </a>
+                                    <a class="nav-link" href="{{ route('admin.projects.deleted.index') }}">
+                                        Deleted Projects 
+                                    </a>
+                                </div>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin.types.index') }}">
-                                    Types 
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Types
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('admin.types.create') }}">
-                                    Add a new Type
-                                </a>
+
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="nav-link" href="{{ route('admin.types.index') }}">
+                                        All types 
+                                    </a>
+                                    <a class="nav-link" href="{{ route('admin.types.create') }}">
+                                        Add a new Type
+                                    </a>
+                                </div>
                             </li>
 
                             <li class="nav-item dropdown">
