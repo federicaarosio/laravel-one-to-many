@@ -17,7 +17,6 @@
                     <th scope="col">Title</th>
                     <th scope="col">Author</th>
                     <th scope="col">Created on</th>
-                    <th scope="col">Languages</th>
                     <th scope="col">Description</th>
                     <th scope="col">Actions</th>
                   </tr>
@@ -29,7 +28,6 @@
                         <td>{{ $project->title }}</td>
                         <td>{{ $project->author }}</td>
                         <td>{{ $project->creation_date }}</td>
-                        <td>{{ $project->languages }}</td>
                         <td>{{ substr($project->description, 0, 45 )}}...</td>
                         <td>
                             <a href="{{ route('admin.projects.deleted.restore', $project) }}">

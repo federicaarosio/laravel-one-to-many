@@ -21,7 +21,6 @@ class ProjectSeeder extends Seeder
                     'author' => 'Federica Arosio',
                     'cover_image' => 'https://picsum.photos/id/104/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
-                    'languages' => 'html, css, js',
                     'creation_date' => '2023-10-12'
                 ],
                 [
@@ -29,7 +28,6 @@ class ProjectSeeder extends Seeder
                     'author' => 'Federica Arosio',
                     'cover_image' => 'https://picsum.photos/id/102/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
-                    'languages' => 'html, css, js',
                     'creation_date' => '2023-11-06'
                 ],
                 [
@@ -37,7 +35,6 @@ class ProjectSeeder extends Seeder
                     'author' => 'Federica Arosio',
                     'cover_image' => 'https://picsum.photos/id/101/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
-                    'languages' => 'html, css, js, vue',
                     'creation_date' => '2023-12-12'
                 ],
                 [
@@ -45,7 +42,6 @@ class ProjectSeeder extends Seeder
                     'author' => 'Federica Arosio',
                     'cover_image' => 'https://picsum.photos/id/106/640/480',
                     'description' => 'Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto Breve descrizione del progetto',
-                    'languages' => 'html, css, js, php',
                     'creation_date' => '2022-01-12'
                 ],
         ];
@@ -60,7 +56,6 @@ class ProjectSeeder extends Seeder
             $newProject->author = $singleProject['author'];
             $newProject->description = $singleProject['description'];
             $newProject->cover_image = $singleProject['cover_image'];
-            $newProject->languages = $singleProject['languages'];
             $newProject->creation_date= $singleProject['creation_date'];
             $newProject->save();
         };

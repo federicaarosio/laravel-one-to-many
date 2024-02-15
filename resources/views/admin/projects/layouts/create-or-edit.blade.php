@@ -48,11 +48,6 @@
                     <div class="mb-2">
                         <img src="" alt="Project cover preview" class="d-none" id="cover-image-preview">
                     </div>
-
-                    <div class="mb-3 input-group">
-                        <label for="languages" class="input-group-text">Languages:</label>
-                        <input class="form-control" type="text" name="languages" id="languages" value="{{ old('languages',$project->languages) }}">
-                    </div>
     
                     <div class="mb-3 input-group">
                         <label for="description" class="input-group-text">Short description:</label>
